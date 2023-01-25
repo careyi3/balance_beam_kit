@@ -4,7 +4,7 @@
 #include <SimpleKalmanFilter.h>
 
 const int STEP_PIN = 2;
-const int DIR_PIN = 2;
+const int DIR_PIN = 3;
 const int ECHO_PIN = 6;
 const int TRIG_PIN = 5;
 const int STEPPER_MAX = 800;
@@ -12,7 +12,7 @@ const int STEPPER_MIN = -800;
 
 const double MEASURMENT_ERROR = 0.03;
 const double VARIANCE = 0.01;
-const double KP = 100.0;
+const double KP = 75.0;
 const double KI = 0.0;
 const double KD = 0.0;
 const double SET_POINT = 0.0;
@@ -49,9 +49,9 @@ void move()
 {
   if (output > STEPPER_MIN && output < STEPPER_MAX)
   {
-    stepper.moveTo(output);
+    stepper.moveTo(-output);
+    stepper.runToPosition();
   }
-  stepper.run();
 }
 
 void loop()
