@@ -7,13 +7,13 @@ const int STEP_PIN = 2;
 const int DIR_PIN = 3;
 const int ECHO_PIN = 6;
 const int TRIG_PIN = 5;
-const int STEPPER_MAX = 800;
-const int STEPPER_MIN = -800;
+const int STEPPER_MAX = 600;
+const int STEPPER_MIN = -600;
 
-const double MEASURMENT_ERROR = 0.03;
+const double MEASURMENT_ERROR = 0.02;
 const double VARIANCE = 0.01;
-const double KP = 75.0;
-const double KI = 0.0;
+const double KP = 45.0;
+const double KI = 25.0;
 const double KD = 0.0;
 const double SET_POINT = 0.0;
 
@@ -28,7 +28,7 @@ PID pid(&input, &output, &setPoint, KP, KI, KD, DIRECT);
 void setup()
 {
   Serial.begin(9600);
-  stepper.setMaxSpeed(20000);
+  stepper.setMaxSpeed(25000);
   stepper.setAcceleration(10000);
   setPoint = SET_POINT;
   pid = PID(&input, &output, &setPoint, KP, KI, KD, DIRECT);
@@ -39,7 +39,7 @@ void setup()
 void readSensor()
 {
   double reading = sensor.dist();
-  if (reading > 2.0 && reading < 20.00)
+  if (reading > 2.0 && reading < 25.00)
   {
     ball_position = filter.updateEstimate(reading);
   }
@@ -57,7 +57,9 @@ void move()
 void loop()
 {
   readSensor();
-  input = ball_position - 9.0;
+  input = ball_position - 13.5;
   pid.Compute();
   move();
+  Serial.println(input);
+  Serial.println(output);
 }
