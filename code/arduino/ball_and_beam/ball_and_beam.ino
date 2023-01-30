@@ -42,23 +42,21 @@ void readSensor()
   double reading = sensor.dist();
   if (reading > 2.0 && reading < 25.00)
   {
-    ball_position = filter.updateEstimate(reading);
+    ball_position = filter.updateEstimate(reading) / 100.00;
   }
 }
 
 void move()
 {
-  stepper.moveTo(-output);
-  while(stepper.distanceToGo() != 0)
-  {
-    stepper.run();
-  }
+  stepper.runToNewPosition(-output);
 }
 
 void loop()
 {
   readSensor();
-  input = ball_position - 13.5;
+  double h = ball_position - 0.135;
+  double a = stepper.currentPosition() * 0.000098;
+  input = h * cos(a);
   pid.Compute();
   move();
 }
