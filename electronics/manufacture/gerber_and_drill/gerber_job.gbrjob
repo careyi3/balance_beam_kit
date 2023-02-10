@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2023-02-10T15:46:01Z",
+        "GenerationSoftware": {
+            "Application": "Fusion 360 Electronics",
+            "Vendor": "Autodesk",
+            "Version": "9.7.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "main_board_schematic v37"
+        },
+        "Owner": "Ian Carey <ian@iancarey.ie>",
+        "Size": {
+            "X": 73.33,
+            "Y": 66.03
+        }
+    }
+}
