@@ -16,4 +16,6 @@ It is Ian's hope that this kit can provide a good introduction to control theory
 
 ## About the Creator
 
-Ian Carey is a professional software engineer with a decade of experience writing software in Dublin's busy tech industry. During the global COVID-19 pandemic, Ian rekindled his love of making things with his hands and got back into many things he hadn't touched since his college days. Ian is now an avid maker and spends most of his spare time building robots with 3d printing. 
+Ian Carey is a professional software engineer with a decade of experience writing software in Dublin's busy tech industry. During the global COVID-19 pandemic, Ian rekindled his love of making things with his hands and got back into many things he hadn't touched since his college days. Ian is now an avid maker and spends most of his spare time building robots with 3d printing.
+
+You can find more of Ian's work on his [website](https://iancarey.ie).

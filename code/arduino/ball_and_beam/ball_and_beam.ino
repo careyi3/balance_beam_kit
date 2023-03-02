@@ -3,8 +3,8 @@
 #include <AccelStepper.h>
 #include <SimpleKalmanFilter.h>
 
-const int STEP_PIN = 2;
-const int DIR_PIN = 3;
+const int STEP_PIN = 3;
+const int DIR_PIN = 2;
 const int ECHO_PIN = 6;
 const int TRIG_PIN = 5;
 const int M0_PIN = 8;
@@ -86,7 +86,7 @@ void move()
 void loop()
 {
   readSensor();
-  double h = ball_position - 13.5;
+  double h = 13.5 - ball_position;
   double a = stepper.currentPosition() * radiansPerStep;
   input = h * cos(a);
   pid.Compute();
