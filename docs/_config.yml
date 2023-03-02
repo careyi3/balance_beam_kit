@@ -1,0 +1,12 @@
+title: Ball & Beam
+description: >-
+  Welcome to the docs and instruction manual for the Ball & Beam kit by Ian Carey.
+baseurl: "/balance_beam_kit/"
+url: "https://careyi3.github.io"
+github_username: "careyi3"
+header_pages:
+  - getting_started/index.md
+  - about.md
+
+# Build settings
+theme: minima
