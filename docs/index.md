@@ -17,11 +17,15 @@ Detailed instructions on the mechanical assembly of the rig.
 
 [Assembly](./assembly)
 
+![exploded assembly view](./images/assembly_exploded_view.png)
+
 ### Electronics
 
 Details all of the the electronics involved, Arduino, stepper motors, position sensors and details of the PCB design.
 
 [Electronics](./electronics)
+
+![main board schematic](./images/main_board_schematic.png)
 
 ### Programming
 
