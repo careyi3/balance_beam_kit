@@ -5,7 +5,6 @@ baseurl: "/balance_beam_kit/"
 url: "https://careyi3.github.io"
 github_username: "careyi3"
 header_pages:
-  - getting_started/index.md
   - about.md
 
 # Build settings
