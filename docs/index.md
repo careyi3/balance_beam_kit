@@ -6,6 +6,7 @@ title: Welcome!
 layout: home
 ---
 
+![ball and beam](./images/ball_and_beam.jpg)
 
 This is main project site for the Ball & Beam kit by Ian Carey. This guide covers everything you need to know to get up and running with the Ball & Beam kit from assembly, to programming to the theory behind how it works! The below sections are laid out so that they build on each other but you should jump in and out of them in what ever order makes the most sense to you.
 
@@ -51,7 +52,7 @@ Details all of the the electronics involved, Arduino, stepper motors, position s
 
 [Electronics](./electronics)
 
-![main board schematic](./images/main_board_schematic.png)
+![main board schematic](./images/electronics/main_board_schematic.png)
 
 &nbsp;
 
