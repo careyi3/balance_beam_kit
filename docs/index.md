@@ -62,7 +62,7 @@ Details all of the the electronics involved, Arduino, stepper motors, position s
 
 ## Programming
 
-Details of the code involved in the system and working with the Arduino platform.
+Details of the code involved in the system and working with the Arduino platform. We will also dig into the various libraries used in the project and how they work.
 
 [Programming](./programming)
 
