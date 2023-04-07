@@ -74,6 +74,8 @@ Details of the code involved in the system and working with the Arduino platform
 
 ## Control Theory
 
-Background theory on control theory and supporting materials.
+In this section we will do an overview of the concepts behind control theory. The goal is to use as little maths as possible to give good overview of how a PID controller works and how it applies to our problem.
 
 [Control Theory](./control_theory)
+
+![system diagram](./images/control_theory/system_diagram.png)

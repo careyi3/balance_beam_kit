@@ -8,6 +8,8 @@ In this section we will provide a basic overview of getting started with program
 
 The sample code provided for the system is [here](https://github.com/careyi3/balance_beam_kit/blob/master/code/arduino/ball_and_beam/ball_and_beam.ino).
 
+I have a [video on YouTube](https://www.youtube.com/watch?v=OBsXWNbOTRY) breaking down the code and going over it in some detail, it is a good companion to this guide if you want to take a look.
+
 &nbsp;
 
 ---
